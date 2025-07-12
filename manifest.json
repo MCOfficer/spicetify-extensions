@@ -1,0 +1,10 @@
+[
+  {
+    "name": "NoPlaylistFilter",
+    "description": "When filtering with Ctrl-F, queues the full playlist.",
+    "preview": "no-playlist-filter.png",
+    "main": "no-playlist-filter.js",
+    "readme": "README.md",
+    "tags": ["playlist"]
+  }
+]
