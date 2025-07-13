@@ -2,7 +2,7 @@ function patch() {
     console.log("[NoPlaylistFilter] Wrapping play function")
     let original = Spicetify.Platform.PlayerAPI.play;
     let wrapped = async function (e, t, n = {}) {
-        if (e.playlistQueryOptions.filter != undefined) {
+        if (e.playlistQueryOptions && e.playlistQueryOptions.filter != undefined) {
             delete e.playlistQueryOptions.filter;
         }
         let call = original.bind(this);
